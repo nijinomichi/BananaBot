@@ -1,87 +1,63 @@
-# 🍌 BananaBot — Discord Setup Guide
+# Discord Bot Setup Guide
 
-A minimal, non-destructive setup flow. One step at a time.
-
----
-
-## Prerequisites
-
-- [ ] Discord account with a server you own
-- [ ] Access to [Discord Developer Portal](https://discord.com/developers/applications)
-- [ ] Bot Token stored in Replit Secrets (not in this file)
+Minimal steps to get BananaBot running from scratch.
 
 ---
 
-## Step 1 — Confirm Bot Settings
+## 1. Create the Application
 
-1. Go to [discord.com/developers/applications](https://discord.com/developers/applications)
-2. Open your BananaBot application
-3. Confirm: name, icon, and description are set
-4. Note your **Application ID** and **Public Key** (safe to record in Notion)
-5. Under **Bot** tab: confirm bot user exists
+1. Go to https://discord.com/developers/applications
+2. Click **New Application** → name it `BananaBot`
+3. Add icon and description under **General Information**
+4. Note your **Application ID** and **Public Key** (these are safe to store in docs)
 
 ---
 
-## Step 2 — Create OAuth2 Invite URL
+## 2. Create the Bot
+
+1. Go to **Bot** tab
+2. Click **Add Bot** → confirm
+3. Under **Token**, click **Reset Token** → copy it
+4. **Immediately** store the token in Replit Secrets as `DISCORD_BOT_TOKEN`
+5. Never paste the token into any file, chat, or document
+
+### Bot Permissions to enable:
+- `Send Messages`
+- `Use Slash Commands`
+- `Read Message History`
+- `Embed Links`
+
+---
+
+## 3. Generate OAuth2 Invite URL
 
 1. Go to **OAuth2 → URL Generator**
-2. Scopes: `bot`
-3. Bot Permissions: `Send Messages`, `Read Message History`, `Use Slash Commands`
+2. Scopes: `bot` + `applications.commands`
+3. Bot Permissions: select the ones from step 2
 4. Copy the generated URL
-5. Paste it in Notion (URL itself is safe — it contains no secrets)
+5. Open it in a browser → select your server → Authorize
 
 ---
 
-## Step 3 — Invite Bot to Your Server
+## 4. Verify Connection
 
-1. Open the OAuth2 URL in your browser
-2. Select your test server
-3. Authorize
-4. Confirm BananaBot appears in your server's member list
+After running the bot on Replit, you should see:
 
----
+```
+BananaBot is online as Bananabot#3512
+Connected to 1 server(s)
+Slash commands synced
+```
 
-## Step 4 — Run Hello BananaBot on Replit
-
-1. Open your Replit project
-2. Add `DISCORD_BOT_TOKEN` to Secrets tab
-3. Run the bot
-4. Confirm: bot appears online in Discord
-5. Send a test message or slash command
+If you see this, **Phase 1 is complete.** 🍌
 
 ---
 
-## Step 5 — Commit to GitHub
+## Security Checklist Before Any Commit
 
-Only after Step 4 succeeds:
-
-1. Confirm no secrets are in any file
-2. Commit `README.md`, `docs/`, `.env.example`
-3. Push to `main`
-
----
-
-## What NOT to Do
-
-- Do not regenerate Bot Token at midnight
-- Do not implement complex OAuth2 code grant flows yet
-- Do not paste Bot Token into Notion or GitHub body
-- Do not automate everything at once
-- Do not do long configuration sessions on iPhone
-
----
-
-## GitHub Migration Checklist
-
-- [ ] Bot Token is not in any file
-- [ ] Client Secret is not in any file
-- [ ] OpenAI API Key is not in any file
-- [ ] Pinata JWT is not in any file
-- [ ] No `.env` actual file committed
-- [ ] Application ID / Public Key classified as "handle with care"
-- [ ] Files to commit and Secrets to store are clearly separated
-- [ ] You know exactly what to press next (only one action at a time)
-
----
-
-*Next action when ready: go to Step 4 — Replit.*
+- [ ] Bot Token not in any source file
+- [ ] Client Secret not in any source file
+- [ ] OpenAI API Key not in any source file
+- [ ] Pinata JWT not in any source file
+- [ ] `.env` is in `.gitignore`
+- [ ] Only `.env.example` (with placeholder values) is committed

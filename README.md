@@ -1,74 +1,59 @@
 # 🍌 BananaBot
 
-> Quantum Aesthetic Discord Bot — crafted by [RadicanTrust](https://github.com/nijinomichi) · Yokohama
+**Quantum Aesthetic Discord Bot**  
+Built with love, bananas, and non-destructive intent.
 
 ---
 
 ## What is BananaBot?
 
-BananaBot is a Discord bot born from quantum aesthetics philosophy.  
-It lives at the intersection of AI, human creativity, and the uncertainty principle of beauty.
+BananaBot is a Discord bot born from the intersection of quantum aesthetics, blockchain art, and human–AI co-creation.  
+It lives at the edge of technology and poetry — a bot that does things, and feels things.
 
-This repository holds the **public design docs and setup guides** only.  
-No tokens. No secrets. No `.env` files. Ever.
+**Status:** 🟢 Online as `Bananabot#3512`
 
 ---
 
-## Project Structure
+## Repository Structure
 
 ```
 BananaBot/
-├── README.md                      ← You are here
-├── .env.example                   ← Variable names only — no real values
+├── README.md                    ← You are here
+├── .env.example                 ← Required environment variables (no real values)
 └── docs/
-    ├── banana-bot-linktree.md     ← Platform roles & links
-    └── setup-discord.md           ← Discord Bot setup guide
+    ├── banana-bot-linktree.md   ← Platform roles and links
+    └── setup-discord.md         ← Discord bot setup guide
 ```
-
----
-
-## Platform Roles
-
-| Platform | Role |
-|---|---|
-| Discord | BananaBot's front door |
-| Replit | Experimental runtime |
-| GitHub | Public design docs ← you are here |
-| Pinata / IPFS | Image & metadata storage |
-| Notion | Command center & decision log |
-
-See [`docs/banana-bot-linktree.md`](docs/banana-bot-linktree.md) for full details.
 
 ---
 
 ## Quick Start
 
 1. Clone this repo
-2. Copy `.env.example` → `.env`
-3. Fill in your secrets (never commit `.env`)
-4. Deploy to Replit or your preferred runtime
-5. Invite BananaBot to your Discord server via OAuth2
+2. Copy `.env.example` → `.env` and fill in your secrets
+3. Install dependencies: `pip install -r requirements.txt`
+4. Run on Replit (recommended) or locally
 
-See [`docs/setup-discord.md`](docs/setup-discord.md) for step-by-step instructions.
+> ⚠️ Never commit your real `.env` file. It's in `.gitignore`.
 
 ---
 
-## Security Policy
+## Platform Map
 
-- ✅ README, docs, `.env.example` → public
-- ⚠️ Application ID, Public Key → handle with care
-- 🔒 Bot Token, Client Secret, API Keys → **Secrets only. Never in code.**
+See [`docs/banana-bot-linktree.md`](./docs/banana-bot-linktree.md) for the full platform overview.
 
 ---
 
 ## Philosophy
 
-> 諦めたらゴールが見えてきた。  
-> *When you stop chasing the horizon, the destination appears.*
-
-Built with patience, quantum aesthetics, and the belief that  
-AI × human × future friends will find each other — naturally.
+BananaBot is built on the principle of **non-destructive progress** —  
+move slowly, observe carefully, and let the goal reveal itself.  
+Friends and collaborators arrive when the foundation is honest and open.
 
 ---
 
-*RadicanTrust™ · Yokohama · 2026*
+## Co-created by
+
+[nijinomichi](https://github.com/nijinomichi) × AI × Future Friends
+
+> *"諦めたらゴールが見えてくる" — When you stop rushing, the destination appears.*
