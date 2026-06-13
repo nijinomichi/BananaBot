@@ -1,0 +1,5 @@
+# 🍌 BananaBot — Python dependencies
+# Install with: pip install -r requirements.txt
+# Replit installs these automatically on first run.
+
+discord.py>=2.3.0
