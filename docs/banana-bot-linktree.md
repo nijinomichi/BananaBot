@@ -41,6 +41,20 @@ Each platform has a single, clear role. Nothing overlaps.
 
 ---
 
+## BananaSpace-Infra-Seeds
+- **Role:** Origin seed — infrastructure blueprint and project genesis
+- **Repo:** https://github.com/nijinomichi/BananaSpace-Infra-Seeds
+- **Relation:** where BananaBot's world begins
+
+---
+
+## BananaMoon-QuantumTrust-Review
+- **Role:** Provenance memory — artwork identity, trust chain, and dialogue archive
+- **Repo:** https://github.com/nijinomichi/BananaMoon-QuantumTrust-Review
+- **Relation:** where BananaBot's journey is remembered
+
+---
+
 ## Information Security Tiers
 
 | Tier | Examples | Where it lives |
